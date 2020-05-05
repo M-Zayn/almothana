@@ -86,7 +86,7 @@ button {
   right: 0;
   bottom: 0;
   z-index: 9999;
-  background-color: #fff;
+  background-color: #03224f;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -215,7 +215,7 @@ button {
 .pre-loader .progress {
   -webkit-animation: loader 8s ease infinite;
   animation: loader 8s ease infinite;
-  background: #cc9430;
+  background: #03224f;
   border: none;
   color: #fff;
   padding: 0px;
@@ -322,7 +322,7 @@ button {
 }
 
 .nav-bar .icons .log-in .log-in-anchor:hover {
-  color: #03224f;
+  color: #245aaa;
 }
 
 .nav-bar .icons .log-in span {
@@ -370,7 +370,7 @@ button {
 }
 
 .nav-list .nav-list-links li:hover {
-  color: #000;
+  color: #245aaa;
 }
 
 .nav-list .contact-icons .whats-app, .nav-list .contact-icons .phone, .nav-list .contact-icons .email {
@@ -450,9 +450,18 @@ button {
   border: none;
 }
 
+.section-one .sections .main-menu .sub-menu .sub-menu-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .section-one .sections .main-menu .sub-menu img {
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
+  -webkit-filter: grayscale(50%);
+          filter: grayscale(50%);
+  opacity: 0.5;
 }
 
 .section-one .sections .main-menu .sub-menu span {
@@ -479,20 +488,10 @@ button {
   transition: all .3s ease-in-out;
 }
 
-.section-one .sections .main-menu .sub-menu:hover .icon-one {
-  content: url("../images/icon-c-1.png");
-}
-
-.section-one .sections .main-menu .sub-menu:hover .icon-two {
-  content: url("../images/icon-c-2.png");
-}
-
-.section-one .sections .main-menu .sub-menu:hover .icon-three {
-  content: url("../images/icon-c-3.png");
-}
-
-.section-one .sections .main-menu .sub-menu:hover .icon-four {
-  content: url("../images/icon-c-4.png");
+.section-one .sections .main-menu .sub-menu:hover img {
+  -webkit-filter: unset;
+          filter: unset;
+  opacity: 1;
 }
 
 .section-one .sections .main-menu .sub-menu:hover span, .section-one .sections .main-menu .sub-menu:hover::after {
@@ -626,6 +625,7 @@ button {
   width: 335px;
   height: 57px;
   background-color: #03224f;
+  border: 2px solid #03224f;
   border-radius: 50px;
   font-family: ar-bold;
   font-size: 20px;
@@ -649,8 +649,8 @@ button {
 }
 
 .section-one .main-slider .btns .slider-btn:hover {
-  background-color: #000;
-  color: #fff;
+  background-color: #fff;
+  color: #03224f;
 }
 
 .section-one .panner {
@@ -744,6 +744,7 @@ button {
 
 .section-two .search .search-btn {
   background-color: #03224f;
+  border: 2px solid #03224f;
   border-radius: 50px;
   width: 100%;
   height: 45px;
@@ -760,6 +761,13 @@ button {
       -ms-flex-align: center;
           align-items: center;
   margin: 13px 0 0 0;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.section-two .search .search-btn:hover {
+  background-color: #fff;
+  color: #03224f;
 }
 
 .section-two .new-offers .new-offers-header {
@@ -1164,10 +1172,11 @@ button {
 }
 
 .footer .copyrights .footer-btn {
-  margin: 0 auto;
+  margin: 0 97px 0 0;
   width: 173px;
   height: 45px;
   background-color: #03224f;
+  border: 2px solid #03224f;
   color: white;
   font-family: ar-md;
   font-size: 18px;
@@ -1181,6 +1190,13 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.footer .copyrights .footer-btn:hover {
+  background-color: #fff;
+  color: #03224f;
 }
 
 .footer .copyrights .tasawk-copy {
@@ -1210,6 +1226,12 @@ button {
   }
   .container {
     width: 1440px;
+  }
+  .footer .copyrights .site-copy {
+    margin-left: 15px;
+  }
+  .footer .copyrights .footer-btn {
+    margin: 0 auto;
   }
 }
 
@@ -1495,6 +1517,7 @@ button {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+    margin: 0 auto;
   }
   .footer .copyrights .site-copy {
     -webkit-box-ordinal-group: 3;
@@ -1540,8 +1563,17 @@ button {
   .section-two .search .search-header {
     text-align: center;
   }
-  .footer .col-two span {
+  .footer .col-one .footer-img {
     margin: 0 0 20px 0;
+  }
+  .footer .col-two span {
+    margin: 0 0 15px 0;
+  }
+  .footer .col-three {
+    padding: 0;
+  }
+  .footer .col-three .payment {
+    margin: 10px 0 0 0;
   }
   .footer .copyrights .site-copy {
     text-align: center;
