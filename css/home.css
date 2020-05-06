@@ -207,7 +207,7 @@ button {
 }
 
 .pre-loader .bar {
-  background-color: #d3d3d3;
+  background-color: #294979;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -215,7 +215,7 @@ button {
 .pre-loader .progress {
   -webkit-animation: loader 8s ease infinite;
   animation: loader 8s ease infinite;
-  background: #03224f;
+  background: #d3d3d3;
   border: none;
   color: #fff;
   padding: 0px;
@@ -364,7 +364,7 @@ button {
   font-family: ar-md;
   font-size: 17px;
   color: #03224f;
-  margin: 0 0 0 14px;
+  margin: 0 0 0 25px;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
@@ -385,8 +385,6 @@ button {
 
 .nav-list .contact-icons .whats-app:hover, .nav-list .contact-icons .phone:hover, .nav-list .contact-icons .email:hover {
   background-color: #03224f;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#03224f), to(#03224f));
-  background-image: linear-gradient(0deg, #03224f 0%, #03224f 100%);
 }
 
 .nav-list .contact-icons .whats-app {
@@ -397,13 +395,23 @@ button {
   margin: 0 5px;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
-  background-image: -webkit-gradient(linear, right top, left top, from(#c7c8c8), to(#9c9fa6));
-  background-image: linear-gradient(270deg, #c7c8c8 0%, #9c9fa6 100%);
+  background-image: -webkit-gradient(linear, right top, left top, from(#9c9fa6), color-stop(#c7c8c8), color-stop(#c7c8c8), to(#9c9fa6));
+  background-image: linear-gradient(270deg, #9c9fa6, #c7c8c8, #c7c8c8, #9c9fa6);
+  background-size: 300%;
+}
+
+.nav-list .contact-icons .phone:hover {
+  background-position-x: 100%;
 }
 
 .nav-list .contact-icons .email {
-  background-image: -webkit-gradient(linear, left top, right top, from(#c7c8c8), to(#9c9fa6));
-  background-image: linear-gradient(90deg, #c7c8c8 0%, #9c9fa6 100%);
+  background-image: -webkit-gradient(linear, right top, left top, from(#c7c8c8), color-stop(#9c9fa6), color-stop(#9c9fa6), to(#c7c8c8));
+  background-image: linear-gradient(270deg, #c7c8c8, #9c9fa6, #9c9fa6, #c7c8c8);
+  background-size: 300%;
+}
+
+.nav-list .contact-icons .email:hover {
+  background-position-x: 100%;
 }
 
 /*------ navlist end ------*/
@@ -709,6 +717,8 @@ button {
 
 .section-two .search .select .bootstrap-select > .dropdown-toggle.bs-placeholder, .section-two .search .select .bootstrap-select > .dropdown-toggle.bs-placeholder:active, .section-two .search .select .bootstrap-select > .dropdown-toggle.bs-placeholder:focus, .section-two .search .select .bootstrap-select > .dropdown-toggle.bs-placeholder:hover {
   border-radius: 50px;
+  border-width: 2px;
+  border-color: #ededed;
   outline: none !important;
   padding: 0;
 }
@@ -729,13 +739,42 @@ button {
   padding: 0 30px;
 }
 
+.section-two .search .select .dropdown-menu {
+  top: 93%;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.section-two .search .select .bootstrap-select .dropdown-menu {
+  width: 262px;
+  max-height: 241px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 23px;
+  background-color: white;
+}
+
 .section-two .search .select .bootstrap-select .dropdown-menu.inner {
   font-family: ar-reg;
-  font-size: 14px;
+  font-size: 15px;
+  color: #999;
+  padding: 0px 35px 20px 0;
+}
+
+.section-two .search .select .bootstrap-select .dropdown-menu li a {
+  color: inherit;
+  padding: 4px 0;
+}
+
+.section-two .search .select .bootstrap-select .dropdown-menu li a:hover {
+  color: #03224f;
+  background-color: transparent;
 }
 
 .section-two .search .select .dropdown-menu > .active > a, .section-two .search .select .dropdown-menu > .active > a:focus, .section-two .search .select .dropdown-menu > .active > a:hover {
-  background-color: #03224f;
+  background-color: transparent;
+  color: #999;
 }
 
 .section-two .search .select .display {
@@ -954,7 +993,7 @@ button {
 
 .footer .col-one ul li {
   font-family: ar-reg;
-  font-size: 15px;
+  font-size: 16px;
   color: #666666;
   text-align: center;
   -webkit-transition: all 0.3s ease-in-out;
@@ -1046,6 +1085,15 @@ button {
   cursor: pointer;
 }
 
+.footer .col-two .newsletter:hover::after {
+  color: #03224f;
+  opacity: 1;
+}
+
+.footer .col-two .newsletter:hover input {
+  border-color: #03224f;
+}
+
 .footer .col-two input {
   position: relative;
   width: 334px;
@@ -1056,6 +1104,8 @@ button {
   border-color: #ededed;
   outline: none;
   padding: 0 30px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .footer .col-two input::-webkit-input-placeholder {
@@ -1111,7 +1161,7 @@ button {
 
 .footer .col-three ul li {
   font-family: ar-reg;
-  font-size: 15px;
+  font-size: 16px;
   color: #666666;
   text-align: center;
   -webkit-transition: all 0.3s ease-in-out;
