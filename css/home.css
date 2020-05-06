@@ -749,10 +749,25 @@ button {
 .section-two .search .select .bootstrap-select .dropdown-menu {
   width: 262px;
   max-height: 241px;
+  border: none;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
   border-radius: 23px;
   background-color: white;
+  scrollbar-color: #eeeeee;
+}
+
+.section-two .search .select .bootstrap-select .dropdown-menu::-webkit-scrollbar {
+  width: 8px;
+}
+
+.section-two .search .select .bootstrap-select .dropdown-menu::-webkit-scrollbar-track {
+  background-color: #eee;
+}
+
+.section-two .search .select .bootstrap-select .dropdown-menu::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #03224f;
 }
 
 .section-two .search .select .bootstrap-select .dropdown-menu.inner {
@@ -760,6 +775,7 @@ button {
   font-size: 15px;
   color: #999;
   padding: 0px 35px 20px 0;
+  width: auto;
 }
 
 .section-two .search .select .bootstrap-select .dropdown-menu li a {
@@ -1031,12 +1047,14 @@ button {
   height: 50px;
   border-radius: 50%;
   margin: 0 4px;
-  font-size: 20px;
+  font-size: 24px;
   color: white;
 }
 
 .footer .col-two .icons button:nth-of-type(1) {
   background-color: #faf600;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 
 .footer .col-two .icons button:nth-of-type(2) {
@@ -1211,7 +1229,7 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 55px 0 35px 0;
+  padding: 35px 0 35px 0;
 }
 
 .footer .copyrights .site-copy {
@@ -1451,21 +1469,28 @@ button {
     padding: 0 0 0 5px;
   }
   .fixed-menu .contact-icons {
-    margin: 15px 0 0 0;
+    margin: 35px 0 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .fixed-menu .contact-icons .whats-app, .fixed-menu .contact-icons .phone, .fixed-menu .contact-icons .email {
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     color: #fff;
-    font-size: 15px;
+    font-size: 18px;
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
   }
   .fixed-menu .contact-icons .whats-app:hover, .fixed-menu .contact-icons .phone:hover, .fixed-menu .contact-icons .email:hover {
     background-color: #03224f;
-    background-image: -webkit-gradient(linear, left bottom, left top, from(#03224f), to(#03224f));
-    background-image: linear-gradient(0deg, #03224f 0%, #03224f 100%);
   }
   .fixed-menu .contact-icons .whats-app {
     background-color: #0dc143;
@@ -1474,12 +1499,20 @@ button {
     margin: 0 5px;
     -webkit-transform: rotateY(180deg);
             transform: rotateY(180deg);
-    background-image: -webkit-gradient(linear, right top, left top, from(#c7c8c8), to(#9c9fa6));
-    background-image: linear-gradient(270deg, #c7c8c8 0%, #9c9fa6 100%);
+    background-image: -webkit-gradient(linear, right top, left top, from(#9c9fa6), color-stop(#c7c8c8), color-stop(#c7c8c8), to(#9c9fa6));
+    background-image: linear-gradient(270deg, #9c9fa6, #c7c8c8, #c7c8c8, #9c9fa6);
+    background-size: 300%;
+  }
+  .fixed-menu .contact-icons .phone:hover {
+    background-position-x: 100%;
   }
   .fixed-menu .contact-icons .email {
-    background-image: -webkit-gradient(linear, left top, right top, from(#c7c8c8), to(#9c9fa6));
-    background-image: linear-gradient(90deg, #c7c8c8 0%, #9c9fa6 100%);
+    background-image: -webkit-gradient(linear, right top, left top, from(#c7c8c8), color-stop(#9c9fa6), color-stop(#9c9fa6), to(#c7c8c8));
+    background-image: linear-gradient(270deg, #c7c8c8, #9c9fa6, #9c9fa6, #c7c8c8);
+    background-size: 300%;
+  }
+  .fixed-menu .contact-icons .email:hover {
+    background-position-x: 100%;
   }
   .section-one .sections .main-menu .sub-menu-hover {
     opacity: unset;
@@ -1573,7 +1606,7 @@ button {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
-    margin: 20px auto 10px auto;
+    margin: 30px auto 10px auto;
   }
   .footer .copyrights .tasawk-copy {
     -webkit-box-ordinal-group: 4;
@@ -1617,7 +1650,7 @@ button {
     margin: 0 0 20px 0;
   }
   .footer .col-two span {
-    margin: 0 0 15px 0;
+    margin: 0 0 30px 0;
   }
   .footer .col-three {
     padding: 0;
@@ -1631,5 +1664,3 @@ button {
 }
 
 /*------ direction ------*/
-
-/*# sourceMappingURL=home.css.map */
