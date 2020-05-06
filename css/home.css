@@ -724,8 +724,8 @@ button {
 
 .section-two .search .select .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn).open .dropdown-menu {
   border-radius: 0 0 25px 25px;
-  -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.1);
 }
 
 .section-two .search .select .bootstrap-select > .dropdown-toggle {
@@ -772,6 +772,7 @@ button {
   border-radius: 23px;
   background-color: white;
   scrollbar-color: #eeeeee;
+  padding: 0px 35px 20px 30px;
 }
 
 .section-two .search .select .bootstrap-select .dropdown-menu::-webkit-scrollbar {
@@ -794,8 +795,11 @@ button {
   font-family: ar-reg;
   font-size: 15px;
   color: #999;
-  padding: 0px 35px 20px 0;
   width: auto;
+  padding: 0 10px;
+  border-radius: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
 }
 
 .section-two .search .select .bootstrap-select .dropdown-menu li a {
