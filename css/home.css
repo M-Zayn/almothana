@@ -1065,15 +1065,21 @@ button {
 
 .footer .col-two .icons {
   margin: 0 0 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.footer .col-two .icons button {
+.footer .col-two .icons a {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   margin: 0 4px;
   font-size: 24px;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer .col-two .icons .snap {
