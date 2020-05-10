@@ -675,18 +675,15 @@ button {
 
 /*------ section one end ------*/
 /*------ section two start ------*/
-.section-two {
-  margin: 30px 0 0 0;
-}
 
-.section-two .search .search-header {
+.search .search-header {
   font-family: ar-bold;
   font-size: 18px;
   color: #03224f;
-  margin: 0 20px 5px 0;
+  margin: 30px 20px 5px 0;
 }
 
-.section-two .search .select {
+ .search .select {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -702,7 +699,7 @@ button {
           flex-direction: column;
 }
 
-.section-two .search .select label {
+ .search .select label {
   font-family: ar-reg;
   font-size: 16px;
   color: black;
@@ -710,33 +707,33 @@ button {
   margin: 0;
 }
 
-.section-two .search .select .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+ .search .select .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
   width: 100%;
   height: 45px;
 }
 
-.section-two .search .select .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .btn {
+ .search .select .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .btn {
   background-color: #fff;
 }
 
-.section-two .search .select .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn).open .btn {
+ .search .select .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn).open .btn {
   border: none;
   border-radius: 23px 23px 0 0;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
 }
 
-.section-two .search .select .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn).open .dropdown-menu {
+ .search .select .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn).open .dropdown-menu {
   border-radius: 0 0 23px 23px;
   -webkit-box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.1);
 }
 
-.section-two .search .select .bootstrap-select > .dropdown-toggle {
+ .search .select .bootstrap-select > .dropdown-toggle {
   height: 100%;
 }
 
-.section-two .search .select .bootstrap-select > .dropdown-toggle.bs-placeholder, .section-two .search .select .bootstrap-select > .dropdown-toggle.bs-placeholder:active, .section-two .search .select .bootstrap-select > .dropdown-toggle.bs-placeholder:focus, .section-two .search .select .bootstrap-select > .dropdown-toggle.bs-placeholder:hover {
+ .search .select .bootstrap-select > .dropdown-toggle.bs-placeholder,  .search .select .bootstrap-select > .dropdown-toggle.bs-placeholder:active,  .search .select .bootstrap-select > .dropdown-toggle.bs-placeholder:focus,  .search .select .bootstrap-select > .dropdown-toggle.bs-placeholder:hover {
   border-radius: 23px;
   border-width: 2px;
   border-color: #ededed;
@@ -745,30 +742,30 @@ button {
   
 }
 
-.section-two .search .select .bootstrap-select .dropdown-toggle .filter-option-inner-inner {
+ .search .select .bootstrap-select .dropdown-toggle .filter-option-inner-inner {
   text-align: right;
   font-family: ar-reg;
   font-size: 15px;
   color: #999999;
 }
 
-.section-two .search .select .bootstrap-select .dropdown-toggle .caret {
+ .search .select .bootstrap-select .dropdown-toggle .caret {
   right: unset;
   left: 30px;
 }
 
-.section-two .search .select .bs3.bootstrap-select .dropdown-toggle .filter-option {
+ .search .select .bs3.bootstrap-select .dropdown-toggle .filter-option {
   padding: 0 30px;
 }
 
-.section-two .search .select .dropdown-menu {
+ .search .select .dropdown-menu {
   top: 93%;
   width: 100%;
   overflow-y: auto;
   overflow-x: hidden;
 }
 
-.section-two .search .select .bootstrap-select .dropdown-menu {
+ .search .select .bootstrap-select .dropdown-menu {
   width: 262px;
   max-height: 241px;
   border: none;
@@ -780,23 +777,23 @@ button {
   padding: 0px 35px 20px 30px;
 }
 
-.section-two .search .select .bootstrap-select .dropdown-menu::-webkit-scrollbar {
+ .search .select .bootstrap-select .dropdown-menu::-webkit-scrollbar {
   width: 5px;
   margin: 5px;
 }
 
-.section-two .search .select .bootstrap-select .dropdown-menu::-webkit-scrollbar-track {
+ .search .select .bootstrap-select .dropdown-menu::-webkit-scrollbar-track {
   background-color: #ededed;
   border-radius: 3px;
   width: 4px;
 }
 
-.section-two .search .select .bootstrap-select .dropdown-menu::-webkit-scrollbar-thumb {
+ .search .select .bootstrap-select .dropdown-menu::-webkit-scrollbar-thumb {
   border-radius: 3px;
   background-color: #b9b9b9;
 }
 
-.section-two .search .select .bootstrap-select .dropdown-menu.inner {
+ .search .select .bootstrap-select .dropdown-menu.inner {
   font-family: ar-reg;
   font-size: 15px;
   color: #999;
@@ -807,26 +804,26 @@ button {
           box-shadow: none !important;
 }
 
-.section-two .search .select .bootstrap-select .dropdown-menu li a {
+ .search .select .bootstrap-select .dropdown-menu li a {
   color: inherit;
   padding: 4px 0;
 }
 
-.section-two .search .select .bootstrap-select .dropdown-menu li a:hover {
+ .search .select .bootstrap-select .dropdown-menu li a:hover {
   color: #03224f;
   background-color: transparent;
 }
 
-.section-two .search .select .dropdown-menu > .active > a, .section-two .search .select .dropdown-menu > .active > a:focus, .section-two .search .select .dropdown-menu > .active > a:hover {
+ .search .select .dropdown-menu > .active > a,  .search .select .dropdown-menu > .active > a:focus,  .search .select .dropdown-menu > .active > a:hover {
   background-color: transparent;
   color: #999;
 }
 
-.section-two .search .select .display {
+ .search .select .display {
   display: block;
 }
 
-.section-two .search .search-btn {
+ .search .search-btn {
   background-image: linear-gradient( 270deg, #c7c8c8,#9c9fa6, #03224f, #03224f);
   background-size: 300%;
   border-radius: 50px;
@@ -849,11 +846,11 @@ button {
   transition: all .5s ease-in-out;
 }
 
-.section-two .search .search-btn:hover {
+ .search .search-btn:hover {
   background-position-x: 100%;
 }
 
-.section-two .new-offers .new-offers-header {
+.new-offers .new-offers-header {
   width: 100%;
   padding: 0 0 12px 0;
   display: -webkit-box;
@@ -865,11 +862,11 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 0 30px 0;
+  margin: 30px 0 30px 0;
   border-bottom: 1px solid #e6e6e6;
 }
 
-.section-two .new-offers .new-offers-header h3 {
+ .new-offers .new-offers-header h3 {
   position: relative;
   margin: 0;
   padding: 0 10px;
@@ -878,7 +875,7 @@ button {
   color: #03224f;
 }
 
-.section-two .new-offers .new-offers-header h3::after {
+ .new-offers .new-offers-header h3::after {
   content: "";
   width: 141px;
   height: 1px;
@@ -888,7 +885,7 @@ button {
   right: 0;
 }
 
-.section-two .new-offers .new-offers-header .show-more {
+ .new-offers .new-offers-header .show-more {
   padding: 0 10px;
   font-family: ar-reg;
   font-size: 16px;
@@ -897,7 +894,7 @@ button {
   transition: all .3s ease-in-out;
 }
 
-.section-two .new-offers .new-offers-header .show-more:hover {
+ .new-offers .new-offers-header .show-more:hover {
   color: #03224f;
 }
 
@@ -1079,17 +1076,17 @@ button {
   color: white;
 }
 
-.footer .col-two .icons button:nth-of-type(1) {
+.footer .col-two .icons .snap {
   background-color: #faf600;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
 }
 
-.footer .col-two .icons button:nth-of-type(2) {
+.footer .col-two .icons .instagram {
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
 }
 
-.footer .col-two .icons button:nth-of-type(3) {
+.footer .col-two .icons .twitter {
   background-color: #53abeb;
 }
 
@@ -1271,8 +1268,8 @@ button {
   margin: 0 97px 0 0;
   width: 173px;
   height: 45px;
-  background-color: #03224f;
-  border: 2px solid #03224f;
+  background-image: linear-gradient( 270deg, #c7c8c8,#9c9fa6, #03224f, #03224f);
+  background-size: 300%;
   color: white;
   font-family: ar-md;
   font-size: 18px;
@@ -1291,8 +1288,7 @@ button {
 }
 
 .footer .copyrights .footer-btn:hover {
-  background-color: #fff;
-  color: #03224f;
+  background-position-x: 100%;
 }
 
 .footer .copyrights .tasawk-copy {
@@ -1636,7 +1632,7 @@ button {
   .section-one .panner img {
     margin: 0 auto;
   }
-  .section-two .new-offers {
+ .new-offers {
     margin: 50px 0 0 0;
   }
   .cards {
@@ -1727,7 +1723,7 @@ button {
   .section-one .main-slider .btns .slider-btn {
     margin: 5px 0;
   }
-  .section-two .search .search-header {
+  .search .search-header {
     text-align: center;
   }
   .footer .col-one .footer-img {
